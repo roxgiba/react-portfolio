@@ -5,6 +5,9 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { VscArrowCircleRight } from "react-icons/vsc";
 import browser from "../public/browser.png";
+import coaching_webView from "../public/coaching_webView.png";
+import coaching_mobileView from "../public/coaching_mobileView.png";
+import coaching_mobileView2 from "../public/coaching_mobileView2.png";
 import home from "../public/home.png";
 import gallery from "../public/gallery.png";
 import quiz_example2 from "../public/quiz_example2.png";
@@ -93,7 +96,7 @@ export default function Home() {
 
         <section>
           <div className="text-center">
-            <h3 className="text-5xl p-10 mt-4 dark:text-white">Skills</h3>
+            <h3 className="text-5xl p-10 mt-4 text-teal-600">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I have a solid understanding of{" "}
               <span className="text-xl font-medium">
@@ -105,7 +108,7 @@ export default function Home() {
           </div>
 
           <div className="lg:flex flex-row justify-center  gap-10">
-            <div className=" bg-white text-center shadow-lg p-10 rounded-xl my-2 dark:bg-white">
+            <div className=" bg-white text-center shadow-lg p-10 rounded-xl my-2 dark:bg-slate-200">
               {/* <Image src={design} alt="figma logo" width={100} height={100} /> */}
               <h3 className="text-2xl font-medium pt-8 pb-2">
                 Beautiful designs
@@ -113,14 +116,15 @@ export default function Home() {
               <p className="py-2">
                 Creating elegant design suited for the needs of our clients.
               </p>
-              <h4 className="py-4 text-xl text-teal-600">Design Tools</h4>
+              <h4 className="py-4 text-xl text-teal-600 ">Design Tools</h4>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">Bootstrap</p>
               <p className="text-gray-800 py-1">Tailwind CSS</p>
               <p className="text-gray-800 py-1">Material UI</p>
             </div>
 
-            <div className=" bg-white text-center items-center shadow-lg p-10 rounded-xl my-2 dark:bg-white">
+            <div className=" bg-white text-center items-center shadow-lg p-10 rounded-xl my-2 dark:bg-slate-200">
               {/* <Image
                 src={code}
                 alt="code screen"
@@ -146,11 +150,11 @@ export default function Home() {
           <div>
             <h3
               id="projects"
-              className="text-5xl p-10 mt-4 dark:text-white text-center"
+              className="text-5xl p-10 mt-4 text-teal-600   text-center"
             >
               Projects
             </h3>
-            <div className="flex items-center">
+            <div className="flex items-center dark:text-white">
               <h3 className="text-4xl py-1 mt-4 dark:text-white">
                 Valeria Coaching
               </h3>
@@ -162,90 +166,88 @@ export default function Home() {
                 <VscArrowCircleRight />
               </a>
             </div>
-            <h3 className="text-base py-1 text-slate-500 dark:text-white">
+            <h3 className="text-sm py-1 mb-4 text-slate-500 dark:text-white">
               <a
                 href="https://github.com/roxgiba/valeria-coaching"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm mb-2"
-              >
-                Show the code
-              </a>
-              <div>
-                <p className="text-black text-xl dark:text-white">
-                  I created this website for a client who just graduated from
-                  the{" "}
-                  <span>
-                    <a
-                      href="https://coachingfederation.org/contact-us"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-bold"
-                    >
-                      Coaching Federation (ICF)
-                    </a>
-                  </span>{" "}
-                  in Barcelona. She needed a webpage that allows her to
-                  introduce herself, what coaching is and wahts services she
-                  provides. I added a calendar that allows for bookings.
-                </p>{" "}
-                <p className="text-slate-600 text-base dark:text-white mt-4">
-                  For this project, I utilized JavaScript as the primary
-                  programming language, leveraging the Next.js framework for
-                  building a high-performance web application. I also played a
-                  pivotal role in crafting an engaging user experience by
-                  applying CSS and utilizing the Tailwind CSS framework for
-                  streamlined and responsive design.
-                </p>
-              </div>
-              <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                <div className="">
-                  <Image
-                    src="/coaching-mobileView.png"
-                    alt="project coaching mobile view"
-                    width={40}
-                    height={40}
-                    layout="responsive"
-                    className="rounded-lg object-cover shadow-lg"
-                  />
-                </div>
-                <div className="">
-                  <Image
-                    src="/coaching-mobileView2.png"
-                    alt="project coaching mobile view dropdown"
-                    width={40}
-                    height={40}
-                    layout="responsive"
-                    className="rounded-lg object-cover shadow-lg"
-                  />
-                </div>
-
-                <div className="basis-1/3 flex-1">
-                  <Image
-                    src="/coaching-webView.png"
-                    alt="project coaching web view"
-                    width={200}
-                    height={200}
-                    layout="responsive"
-                    className="rounded-lg shadow-lg"
-                  />
-                </div>
-              </div>
-            </h3>
-            <h3 className="text-4xl py-1 mt-4 dark:text-white">ArtEscape</h3>
-            <h3 className="text-medium py-1 text-slate-500 dark:text-white">
-              <a
-                href="https://github.com/roxgiba/ArtEscape"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm mb-2"
               >
                 Show the code
               </a>
             </h3>
             <div>
               <p className="text-black text-xl dark:text-white">
-                ∫ Experience a dynamic, full-stack application meticulously
+                I created this website for a client who just graduated from the{" "}
+                <span>
+                  <a
+                    href="https://coachingfederation.org/contact-us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold"
+                  >
+                    Coaching Federation (ICF)
+                  </a>
+                </span>{" "}
+                in Barcelona. She needed a webpage that allows her to introduce
+                herself, what coaching is and wahts services she provides. I
+                added a calendar that allows for bookings.
+              </p>{" "}
+              <p className="text-slate-600 text-base dark:text-white mt-4">
+                For this project, I utilized JavaScript as the primary
+                programming language, leveraging the Next.js framework for
+                building a high-performance web application. I also played a
+                pivotal role in crafting an engaging user experience by applying
+                CSS and utilizing the Tailwind CSS framework for streamlined and
+                responsive design.
+              </p>
+            </div>
+            <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div className="">
+                <Image
+                  src={coaching_mobileView}
+                  alt="project coaching mobile view"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+              <div className="">
+                <Image
+                  src={coaching_mobileView2}
+                  alt="project coaching mobile view dropdown"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+
+              <div className="basis-1/3 flex-1">
+                <Image
+                  src={coaching_webView}
+                  alt="project coaching web view"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+            </div>
+
+            <h3 className="text-4xl py-1 mt-4 dark:text-white">ArtEscape</h3>
+            <h3 className="text-sm mb-4 py-1 text-slate-500 dark:text-white">
+              <a
+                href="https://github.com/roxgiba/ArtEscape"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show the code
+              </a>
+            </h3>
+            <div>
+              <p className="text-black text-xl dark:text-white">
+                Experience a dynamic, full-stack application meticulously
                 crafted to ignite the passion of art enthusiasts across all
                 skill levels. This project offers a captivating fusion of
                 interactive gaming experiences and immersive art lessons,
