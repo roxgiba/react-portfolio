@@ -22,7 +22,7 @@ export default function Home() {
       <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl py-2 text-teal-800 font-medium md:text-3xl">
+            <h1 className="text-xl py-2 text-teal-800 font-medium md:text-3xl dark:text-white">
               {" "}
               Welcome to my Portfolio
             </h1>
@@ -41,6 +41,12 @@ export default function Home() {
                   target="_blank"
                 >
                   Resume
+                </a>
+                <a
+                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
+                  href="#projects"
+                >
+                  Projects
                 </a>
               </li>
             </ul>
@@ -136,7 +142,10 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-5xl p-10 mt-4 dark:text-white text-center">
+            <h3
+              id="projects"
+              className="text-5xl p-10 mt-4 dark:text-white text-center"
+            >
               Projects
             </h3>
             <h3 className="text-3xl py-1 mt-4 dark:text-white">ArtEspace</h3>
