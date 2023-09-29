@@ -27,7 +27,7 @@ export default function Home() {
       <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl py-2 text-teal-800 font-medium md:text-3xl dark:text-white">
+            <h1 className="text-xl py-2 text-teal-800 font-medium lg:text-3xl dark:text-white">
               {" "}
               Welcome to my Portfolio
             </h1>
@@ -97,13 +97,16 @@ export default function Home() {
         <section>
           <div className="text-center">
             <h3 className="text-5xl p-10 mt-4 text-teal-600">Skills</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <p className="text-xl py-2 leading-8 text-gray-800 mb-8 dark:text-white">
               I have a solid understanding of{" "}
               <span className="text-xl font-medium">
                 HTML, CSS, JavaScript, React, Express, and Tailwind CSS.
               </span>{" "}
               With my skills in both front-end and back-end development, I am
               capable of building and designing responsive web applications.
+              Skilled in collaborating within multidisciplinary Agile teams and
+              using a range of development tools. Strong communication,
+              problem-solving abilities, and proficiency in English.
             </p>
           </div>
 
@@ -206,8 +209,8 @@ export default function Home() {
                 <Image
                   src={coaching_mobileView}
                   alt="project coaching mobile view"
-                  width={"100%"}
-                  height={"100%"}
+                  width={"80%"}
+                  height={"80%"}
                   layout="responsive"
                   className="rounded-lg object-cover shadow-lg"
                 />
@@ -216,8 +219,8 @@ export default function Home() {
                 <Image
                   src={coaching_mobileView2}
                   alt="project coaching mobile view dropdown"
-                  width={"100%"}
-                  height={"100%"}
+                  width={"80%"}
+                  height={"80%"}
                   layout="responsive"
                   className="rounded-lg object-cover shadow-lg"
                 />
