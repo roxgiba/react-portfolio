@@ -238,10 +238,28 @@ export default function Home() {
                 href="https://github.com/roxgiba/ArtEscape"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-sm mb-2"
               >
                 Show the code
               </a>
             </h3>
+            <div>
+              <p className="text-black text-xl dark:text-white">
+                Experience a dynamic, full-stack application meticulously
+                crafted to ignite the passion of art enthusiasts across all
+                skill levels. This project offers a captivating fusion of
+                interactive gaming experiences and immersive art lessons,
+                ensuring an engaging and educational journey in the world of
+                art.
+              </p>
+              <div className="text-slate-600 text-base dark:text-white mt-4">
+                For this project, I utilized HTML, JavaScript, React.js,
+                React-Router for the front end and MySQL, Node.js, Express.js,
+                Database Design, API Integration, and Database Management for
+                the back end. I used CSS and Material UI framework for and
+                responsive design.
+              </div>
+            </div>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
