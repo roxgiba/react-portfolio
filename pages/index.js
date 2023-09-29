@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { VscArrowCircleRight } from "react-icons/vsc";
+import browser from "../public/browser.png";
 import home from "../public/home.png";
 import gallery from "../public/gallery.png";
 import quiz_example2 from "../public/quiz_example2.png";
@@ -148,7 +150,85 @@ export default function Home() {
             >
               Projects
             </h3>
-            <h3 className="text-3xl py-1 mt-4 dark:text-white">ArtEspace</h3>
+            <div className="flex items-center">
+              <h3 className="text-4xl py-1 mt-4 dark:text-white">
+                Valeria Coaching
+              </h3>
+              <a
+                href="https://valeria-coaching.vercel.app/"
+                target="_blank"
+                className="text-2xl	"
+              >
+                <VscArrowCircleRight />
+              </a>
+            </div>
+            <h3 className="text-medium py-1 text-slate-500 dark:text-white">
+              <a
+                href="https://github.com/roxgiba/valeria-coaching"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show the code
+              </a>
+              <p className="">
+                I created this website for a client who just graduated from the
+                <span>
+                  <a
+                    href="https://coachingfederation.org/contact-us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Coaching Federation (ICF)
+                  </a>
+                </span>{" "}
+                in Barcelona. She needed a webpage that allows her to introduce
+                herself, what coaching is and wahts services she provides. I
+                added a calendar that allows for bookings.
+              </p>
+              <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+                <div className="">
+                  <Image
+                    src="/coaching-mobileView.png"
+                    alt="project coaching mobile view"
+                    width={40}
+                    height={40}
+                    layout="responsive"
+                    className="rounded-lg object-cover shadow-lg"
+                  />
+                </div>
+                <div className="">
+                  <Image
+                    src="/coaching-mobileView2.png"
+                    alt="project coaching mobile view dropdown"
+                    width={40}
+                    height={40}
+                    layout="responsive"
+                    className="rounded-lg object-cover shadow-lg"
+                  />
+                </div>
+
+                <div className="basis-1/3 flex-1">
+                  <Image
+                    src="/coaching-webView.png"
+                    alt="project coaching web view"
+                    width={300}
+                    height={300}
+                    layout="responsive"
+                    className="rounded-lg object-cover shadow-lg"
+                  />
+                </div>
+              </div>
+            </h3>
+            <h3 className="text-4xl py-1 mt-4 dark:text-white">ArtEscape</h3>
+            <h3 className="text-medium py-1 text-slate-500 dark:text-white">
+              <a
+                href="https://github.com/roxgiba/ArtEscape"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show the code
+              </a>
+            </h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
@@ -158,7 +238,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -168,7 +248,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
               />
             </div>
 
@@ -179,7 +259,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
               />
             </div>
           </div>
