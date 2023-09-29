@@ -25,7 +25,10 @@ export default function Home() {
       <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl dark:text-white"> Portfolio</h1>
+            <h1 className="text-xl dark:text-white">
+              {" "}
+              Welcome to my Portfolio
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -37,7 +40,7 @@ export default function Home() {
                 {" "}
                 <a
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="/Tech CV 2023.pdf"
                 >
                   Resume
                 </a>
@@ -70,7 +73,7 @@ export default function Home() {
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image
-              src={graduation}
+              src="/profile_image.jpeg"
               alt="picture of my graduation"
               layout="fill"
               objectFit="cover"
