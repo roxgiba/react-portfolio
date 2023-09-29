@@ -157,34 +157,47 @@ export default function Home() {
               <a
                 href="https://valeria-coaching.vercel.app/"
                 target="_blank"
-                className="text-2xl	"
+                className="text-2xl ml-2	"
               >
                 <VscArrowCircleRight />
               </a>
             </div>
-            <h3 className="text-medium py-1 text-slate-500 dark:text-white">
+            <h3 className="text-base py-1 text-slate-500 dark:text-white">
               <a
                 href="https://github.com/roxgiba/valeria-coaching"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-sm mb-2"
               >
                 Show the code
               </a>
-              <p className="">
-                I created this website for a client who just graduated from the
-                <span>
-                  <a
-                    href="https://coachingfederation.org/contact-us"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Coaching Federation (ICF)
-                  </a>
-                </span>{" "}
-                in Barcelona. She needed a webpage that allows her to introduce
-                herself, what coaching is and wahts services she provides. I
-                added a calendar that allows for bookings.
-              </p>
+              <div>
+                <p className="text-black text-xl dark:text-white">
+                  I created this website for a client who just graduated from
+                  the{" "}
+                  <span>
+                    <a
+                      href="https://coachingfederation.org/contact-us"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-bold"
+                    >
+                      Coaching Federation (ICF)
+                    </a>
+                  </span>{" "}
+                  in Barcelona. She needed a webpage that allows her to
+                  introduce herself, what coaching is and wahts services she
+                  provides. I added a calendar that allows for bookings.
+                </p>{" "}
+                <p className="text-slate-600 text-base dark:text-white mt-4">
+                  For this project, I utilized JavaScript as the primary
+                  programming language, leveraging the Next.js framework for
+                  building a high-performance web application. I also played a
+                  pivotal role in crafting an engaging user experience by
+                  applying CSS and utilizing the Tailwind CSS framework for
+                  streamlined and responsive design.
+                </p>
+              </div>
               <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
                 <div className="">
                   <Image
@@ -211,10 +224,10 @@ export default function Home() {
                   <Image
                     src="/coaching-webView.png"
                     alt="project coaching web view"
-                    width={300}
-                    height={300}
+                    width={200}
+                    height={200}
                     layout="responsive"
-                    className="rounded-lg object-cover shadow-lg"
+                    className="rounded-lg shadow-lg"
                   />
                 </div>
               </div>
