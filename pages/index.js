@@ -245,7 +245,7 @@ export default function Home() {
             </h3>
             <div>
               <p className="text-black text-xl dark:text-white">
-                Experience a dynamic, full-stack application meticulously
+                ∫ Experience a dynamic, full-stack application meticulously
                 crafted to ignite the passion of art enthusiasts across all
                 skill levels. This project offers a captivating fusion of
                 interactive gaming experiences and immersive art lessons,
