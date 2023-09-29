@@ -3,9 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import graduation from "../public/graduation.jpg";
-import design from "../public/design.png";
-import code from "../public/code.png";
 import home from "../public/home.png";
 import gallery from "../public/gallery.png";
 import quiz_example2 from "../public/quiz_example2.png";
@@ -25,7 +22,7 @@ export default function Home() {
       <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl dark:text-white">
+            <h1 className="text-xl py-2 text-teal-600 font-medium md:text-6xl">
               {" "}
               Welcome to my Portfolio
             </h1>
@@ -41,6 +38,7 @@ export default function Home() {
                 <a
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="/Tech CV 2023.pdf"
+                  target="_blank"
                 >
                   Resume
                 </a>
@@ -68,8 +66,12 @@ export default function Home() {
           </div>
 
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <a href="https://www.linkedin.com/in/roxana-giba" target="_blank">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/roxgiba" target="_blank">
+              <AiFillGithub />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image
@@ -82,15 +84,15 @@ export default function Home() {
         </section>
 
         <section>
-          <div>
-            <h3 className="text-3xl mt-4 py-1 dark:text-white">
-              Services I offer
-            </h3>
+          <div className="text-center">
+            <h3 className="text-5xl p-10 mt-4 dark:text-white">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I have a solid understanding of HTML, CSS, JavaScript, React,
-              Express, and Tailwind CSS. With my skills in both front-end and
-              back-end development, I am capable of building and designing
-              responsive web applications.
+              I have a solid understanding of{" "}
+              <span className="text-xl font-medium">
+                HTML, CSS, JavaScript, React, Express, and Tailwind CSS.
+              </span>{" "}
+              With my skills in both front-end and back-end development, I am
+              capable of building and designing responsive web applications.
             </p>
           </div>
 
@@ -134,7 +136,10 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 mt-4 dark:text-white">Portfolio</h3>
+            <h3 className="text-5xl p-10 mt-4 dark:text-white text-center">
+              Projects
+            </h3>
+            <h3 className="text-3xl py-1 mt-4 dark:text-white">ArtEspace</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
