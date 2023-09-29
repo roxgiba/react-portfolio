@@ -22,7 +22,7 @@ export default function Home() {
       <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h1 className="text-xl py-2 text-teal-800 font-medium md:text-3xl">
               {" "}
               Welcome to my Portfolio
             </h1>
@@ -96,7 +96,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="lg:flex gap-10">
+          <div className="lg:flex flex-row justify-center  gap-10">
             <div className=" bg-white text-center shadow-lg p-10 rounded-xl my-2 dark:bg-white">
               {/* <Image src={design} alt="figma logo" width={100} height={100} /> */}
               <h3 className="text-2xl font-medium pt-8 pb-2">
