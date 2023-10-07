@@ -107,7 +107,7 @@ export default function Home() {
           </div>
 
           <div className="lg:flex flex-row justify-center  gap-10">
-            <div className=" bg-white text-center shadow-lg p-10 rounded-xl my-2 dark:bg-slate-200">
+            <div className=" bg-white text-center shadow-lg p-5 rounded-xl my-2 dark:bg-slate-200">
               {/* <Image src={design} alt="figma logo" width={100} height={100} /> */}
               <h3 className="text-2xl font-medium pt-8 pb-2">
                 Beautiful designs
@@ -123,7 +123,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Material UI</p>
             </div>
 
-            <div className=" bg-white text-center items-center shadow-lg p-10 rounded-xl my-2 dark:bg-slate-200">
+            <div className=" bg-white text-center items-center shadow-lg p-5 rounded-xl my-2 dark:bg-slate-200">
               {/* <Image
                 src={code}
                 alt="code screen"
