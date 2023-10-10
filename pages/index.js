@@ -188,7 +188,7 @@ export default function Home() {
                   </a>
                 </span>{" "}
                 in Barcelona. She needed a webpage that allows her to introduce
-                herself, what coaching is and wahts services she provides. I
+                herself, what coaching is and what services she provides. I
                 added a calendar that allows for bookings.
               </p>{" "}
               <p className="text-slate-600 text-base dark:text-white mt-4">
