@@ -203,6 +203,18 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+
+                  <div className="">
+                <Image
+                  src={vc_webView}
+                  alt="project coaching mobile view"
+                  width={"80%"}
+                  height={"80%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+                 /*   
               <div className="">
                 <Image
                   src={coaching_mobileView}
@@ -213,6 +225,7 @@ export default function Home() {
                   className="rounded-lg object-cover shadow-lg"
                 />
               </div>
+              */
               <div className="">
                 <Image
                   src={coaching_mobileView2}
