@@ -204,7 +204,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
-                  <div className="basis-1/3 flex-1">
+              <div className="basis-1/3 flex-1">
                 <Image
                   src={vc_webView}
                   alt="project coaching mobile view"
@@ -214,6 +214,7 @@ export default function Home() {
                   className="rounded-lg object-cover shadow-lg"
                 />
               </div>
+            </div>
                  /*   
               <div className="">
                 <Image
