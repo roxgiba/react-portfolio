@@ -8,6 +8,8 @@ import browser from "../public/browser.png";
 import coaching_webView from "../public/coaching_webView.png";
 import coaching_mobileView from "../public/coaching_mobileView.png";
 import coaching_mobileView2 from "../public/coaching_mobileView2.png";
+import video_mobileView from "../public/video_mobileView.mp4";
+import vc_webView from "../public/vc_webView.png";
 import home from "../public/home.png";
 import gallery from "../public/gallery.png";
 import quiz_example2 from "../public/quiz_example2.png";
