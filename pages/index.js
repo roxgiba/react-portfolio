@@ -204,12 +204,12 @@ export default function Home() {
             </div>
             <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
-                  <div className="">
+                  <div className="basis-1/3 flex-1">
                 <Image
                   src={vc_webView}
                   alt="project coaching mobile view"
-                  width={"80%"}
-                  height={"80%"}
+                  width={"100%"}
+                  height={"100%"}
                   layout="responsive"
                   className="rounded-lg object-cover shadow-lg"
                 />
@@ -225,7 +225,7 @@ export default function Home() {
                   className="rounded-lg object-cover shadow-lg"
                 />
               </div>
-              */
+            
               <div className="">
                 <Image
                   src={coaching_mobileView2}
@@ -248,6 +248,7 @@ export default function Home() {
                 />
               </div>
             </div>
+              */
 
             <h3 className="text-4xl py-1 mt-4 dark:text-white">ArtEscape</h3>
             <h3 className="text-sm mb-4 py-1 text-slate-500 dark:text-white">
