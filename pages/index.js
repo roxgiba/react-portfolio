@@ -33,7 +33,7 @@ export default function Home() {
                 {" "}
                 <a
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/resume_tech.pdf"
+                  href="/cv_tech.pdf"
                   target="_blank"
                 >
                   Resume
@@ -148,9 +148,147 @@ export default function Home() {
             >
               Projects
             </h3>
+            <div className="flex items-center dark:text-white">
+              <h3 className="text-4xl py-1 mt-4 dark:text-white">
+                Valeria Coaching
+              </h3>
+              <a
+                href="https://valeria-coaching.vercel.app/"
+                target="_blank"
+                className="text-2xl ml-2	"
+              >
+                <VscArrowCircleRight />
+              </a>
+            </div>
+            <h3 className="text-sm py-1 mb-4 text-slate-500 dark:text-white">
+              <a
+                href="https://github.com/roxgiba/valeria-coaching"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show the code
+              </a>
+            </h3>
+            <div>
+              <p className="text-black text-xl dark:text-white">
+                I created this website for a client who just graduated from the{" "}
+                <span>
+                  <a
+                    href="https://coachingfederation.org/contact-us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold"
+                  >
+                    Coaching Federation (ICF)
+                  </a>
+                </span>{" "}
+                in Barcelona. She needed a webpage that allows her to introduce
+                herself, what coaching is and what services she provides. I
+                added a calendar that allows for bookings.
+              </p>{" "}
+              <p className="text-slate-600 text-base dark:text-white mt-4">
+                For this project, I utilized JavaScript as the primary
+                programming language, leveraging the Next.js framework for
+                building a high-performance web application. I also played a
+                pivotal role in crafting an engaging user experience by applying
+                CSS and utilizing the Tailwind CSS framework for streamlined and
+                responsive design.
+              </p>
+            </div>
+            <div className="flex justify-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div className="">
+                <Image
+                  src={coaching_mobileView}
+                  alt="project coaching mobile view"
+                  width={"80%"}
+                  height={"80%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+              <div className="">
+                <Image
+                  src={coaching_mobileView2}
+                  alt="project coaching mobile view dropdown"
+                  width={"80%"}
+                  height={"80%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
 
-            <Project_Coaching />
-            <Project_ArtEscape />
+              <div className="basis-1/3 flex-1">
+                <Image
+                  src={coaching_webView}
+                  alt="project coaching web view"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+            </div>
+
+            <h3 className="text-4xl py-1 mt-4 dark:text-white">ArtEscape</h3>
+            <h3 className="text-sm mb-4 py-1 text-slate-500 dark:text-white">
+              <a
+                href="https://github.com/roxgiba/ArtEscape"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show the code
+              </a>
+            </h3>
+            <div>
+              <p className="text-black text-xl dark:text-white">
+                Experience a dynamic, full-stack application meticulously
+                crafted to ignite the passion of art enthusiasts across all
+                skill levels. This project offers a captivating fusion of
+                interactive gaming experiences and immersive art lessons,
+                ensuring an engaging and educational journey in the world of
+                art.
+              </p>
+              <div className="text-slate-600 text-base dark:text-white mt-4">
+                For this project, I utilized HTML, JavaScript, React.js,
+                React-Router for the front end and MySQL, Node.js, Express.js,
+                Database Design, API Integration, and Database Management for
+                the back end. I used CSS and Material UI framework for and
+                responsive design.
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={home}
+                alt="project art escape home"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                className="rounded-lg object-cover shadow-lg"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={quiz_example2}
+                alt="project art escape artist biography"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                className="rounded-lg object-cover shadow-lg"
+              />
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={gallery}
+                alt="project art escape artist biography"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                className="rounded-lg object-cover shadow-lg"
+              />
+            </div>
           </div>
         </section>
       </main>
