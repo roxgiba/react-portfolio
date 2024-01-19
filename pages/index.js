@@ -3,10 +3,16 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
+import { VscArrowCircleRight } from "react-icons/vsc";
 import { useState } from "react";
 import Project_Coaching from "../components/Project_Coaching";
 import Project_ArtEscape from "../components/Project_ArtEscape";
+import coaching_webView from "../public/coaching_webView.png";
+import coaching_mobileView from "../public/coaching_mobileView.png";
+import coaching_mobileView2 from "../public/coaching_mobileView2.png";
+import home from "../public/home.png";
+import gallery from "../public/gallery.png";
+import quiz_example2 from "../public/quiz_example2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
