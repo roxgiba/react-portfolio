@@ -1,13 +1,12 @@
 import "tailwindcss/tailwind.css";
 import Head from "next/head";
 import Image from "next/image";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
 import { useState } from "react";
 import Project_Coaching from "../components/Project_Coaching";
 import Project_ArtEscape from "../components/Project_ArtEscape";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,49 +19,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className=" min-h-screen">
-          <div className="">
-            <nav className="py-10 mb-12 flex justify-end">
-              <ul className="flex justify-end">
-                <li>
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl dark:text-white"
-                  />
-                </li>
-                <li>
-                  {" "}
-                  <a
-                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
-                    href="#about"
-                  >
-                    About
-                  </a>
-                  <a
-                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                    href="/CV_tech.pdf"
-                    target="_blank"
-                  >
-                    Resume
-                  </a>
-                  <a
-                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
-                    href="#projects"
-                  >
-                    Projects
-                  </a>
-                  <a
-                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
-                    href="#footer"
-                  >
-                    Contact Me
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <Navbar />
 
+      <main className=" bg-amber-100 pt-20 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        <section className=" min-h-screen">
           <div id="about" className="text-center p-10 relative">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Roxana Giba
@@ -158,20 +118,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="projects">
           <div>
-            <h3
-              id="projects"
-              className="text-5xl p-10 mt-4 text-teal-600   text-center"
-            >
+            <h3 className="text-5xl p-10 mt-4 text-teal-600   text-center">
               Projects
             </h3>
 
-            <Project_Coaching />
-            <Project_ArtEscape />
-            <Footer />
+            <div className="">
+              <Project_Coaching />
+              <Project_ArtEscape />
+            </div>
           </div>
         </section>
+        <Footer />
       </main>
     </div>
   );

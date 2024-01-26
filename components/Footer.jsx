@@ -8,7 +8,10 @@ export default function Footer() {
 
   return (
     <div className={darkMode ? "dark" : null}>
-      <div className="bg-slate-600 text-white text-3xl text-center p-14 dark:bg-gray-900">
+      <div
+        id="footer"
+        className="bg-slate-600 text-white text-3xl text-center p-14 dark:bg-gray-900"
+      >
         Let&apos;s work together...
         <div className="text-5xl flex justify-center gap-16 p-14 text-white dark:text-white cursor-pointer">
           <a href="https://www.linkedin.com/in/roxana-giba" target="_blank">
@@ -18,10 +21,7 @@ export default function Footer() {
             <AiFillGithub />
           </a>
         </div>
-        <p className="text-lg">
-          {" "}
-          © - Professional Portfolio Roxana Giba - 2024
-        </p>
+        <p className="text-lg"> © Professional Portfolio Roxana Giba - 2024</p>
       </div>
     </div>
   );
