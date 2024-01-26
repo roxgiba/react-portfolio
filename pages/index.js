@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { useState } from "react";
 import Project_Coaching from "../components/Project_Coaching";
 import Project_ArtEscape from "../components/Project_ArtEscape";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,34 +22,48 @@ export default function Home() {
 
       <main className=" bg-amber-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
-          <nav className="py-10 mb-12 flex justify-end">
-            <ul className="flex justify-end">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl dark:text-white"
-                />
-              </li>
-              <li>
-                {" "}
-                <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/cv_tech.pdf"
-                  target="_blank"
-                >
-                  Resume
-                </a>
-                <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
-                  href="#projects"
-                >
-                  Projects
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="">
+            <nav className="py-10 mb-12 flex justify-end">
+              <ul className="flex justify-end">
+                <li>
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl dark:text-white"
+                  />
+                </li>
+                <li>
+                  {" "}
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
+                    href="#about"
+                  >
+                    About
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="/CV_tech.pdf"
+                    target="_blank"
+                  >
+                    Resume
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
+                    href="#projects"
+                  >
+                    Projects
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
+                    href="#footer"
+                  >
+                    Contact Me
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-          <div className="text-center p-10">
+          <div id="about" className="text-center p-10 relative">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Roxana Giba
             </h2>
@@ -67,7 +82,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
             <a href="https://www.linkedin.com/in/roxana-giba" target="_blank">
               <AiFillLinkedin />
             </a>
@@ -116,6 +131,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Bootstrap</p>
               <p className="text-gray-800 py-1">Tailwind CSS</p>
               <p className="text-gray-800 py-1">Material UI</p>
+              <p className="text-gray-800 py-1">DaisyUI</p>
             </div>
 
             <div className=" bg-white text-center items-center shadow-lg p-5 rounded-xl my-2 dark:bg-slate-200">
@@ -132,6 +148,8 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-xl text-teal-600">Tech Stack</h4>
               <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">Next.js</p>
+              <p className="text-gray-800 py-1">Vue.js</p>
               <p className="text-gray-800 py-1">Node.js</p>
               <p className="text-gray-800 py-1">Express</p>
               <p className="text-gray-800 py-1">Next.js</p>
@@ -151,6 +169,7 @@ export default function Home() {
 
             <Project_Coaching />
             <Project_ArtEscape />
+            <Footer />
           </div>
         </section>
       </main>
