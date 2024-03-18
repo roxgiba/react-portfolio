@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <div className={darkMode ? "dark" : null}>
-      <nav className="py-10 mb-12 w-full fixed pr-5">
+      <nav className="py-10 mb-12 w-full fixed pr-5 bg-slate-300/50">
         <ul className="flex justify-end">
           <li>
             <BsFillMoonStarsFill
@@ -16,16 +16,9 @@ export default function Navbar() {
             />
           </li>
           <li>
-            {" "}
-            <a
-              className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
-              href="#about"
-            >
-              About
-            </a>
             <a
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-              href="/CV_tech.pdf"
+              href="/Tech_Resume.pdf"
               target="_blank"
             >
               Resume
@@ -35,12 +28,6 @@ export default function Navbar() {
               href="#projects"
             >
               Projects
-            </a>
-            <a
-              className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
-              href="#footer"
-            >
-              Contact Me
             </a>
           </li>
         </ul>
