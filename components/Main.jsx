@@ -13,8 +13,16 @@ function Main() {
             Roxana Giba
           </h2>
           <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-            Full Stack Developer.
+            Full Stack Web Developer.
           </h3>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 shadow-2xl rounded-full w-60 h-60 mt-10 mb-10 overflow-hidden md:h-96 md:w-96">
+            <Image
+              src="/profile_image.jpeg"
+              alt="profile picture"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <p className="text-md py-5 leading-8 text-gray-800 md:text-lg mx-auto dark:text-white">
             As a client-focused web developer, I bring energy, enthusiasm, and
             practicality to every project. With a background in customer support
@@ -27,27 +35,19 @@ function Main() {
             connect with me to discuss how I can assist you in achieving your
             online goals.
           </p>
-          <p className="text-xl dark:text-white">
+          <p className="text-2xl dark:text-white">
             Let me help you create captivating websites and optimize customer
             satisfaction.
           </p>
         </div>
 
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
+        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-800 dark:text-white cursor-pointer">
           <a href="https://www.linkedin.com/in/roxana-giba" target="_blank">
             <AiFillLinkedin />
           </a>
           <a href="https://github.com/roxgiba" target="_blank">
             <AiFillGithub />
           </a>
-        </div>
-        <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-          <Image
-            src="/profile_image.jpeg"
-            alt="picture of my graduation"
-            layout="fill"
-            objectFit="cover"
-          />
         </div>
       </section>
 
@@ -78,6 +78,7 @@ function Main() {
             </p>
             <h4 className="py-4 text-xl text-teal-600 ">Design Tools</h4>
             <p className="text-gray-800 py-1">Figma</p>
+            <p className="text-gray-800 py-1">Trello</p>
             <p className="text-gray-800 py-1">CSS</p>
             <p className="text-gray-800 py-1">Bootstrap</p>
             <p className="text-gray-800 py-1">Tailwind CSS</p>

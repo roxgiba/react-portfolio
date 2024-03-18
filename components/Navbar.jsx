@@ -3,17 +3,18 @@ import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : null}>
-      <nav className="py-10 mb-12 w-full fixed pr-5 bg-slate-300/50">
+    // <div className={darkMode ? "dark" : null}>
+    <div>
+      <nav className="py-10 mb-12 w-full fixed pr-5">
         <ul className="flex justify-end">
           <li>
-            <BsFillMoonStarsFill
+            {/* <BsFillMoonStarsFill
               onClick={() => setDarkMode(!darkMode)}
               className="cursor-pointer text-2xl dark:text-white"
-            />
+            /> */}
           </li>
           <li>
             <a
