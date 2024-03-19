@@ -3,6 +3,7 @@ import Image from "next/image";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Project_Coaching from "../components/Project_Coaching";
 import Project_ArtEscape from "../components/Project_ArtEscape";
+import Project_ecommerce from "../components/Project_ecommerce";
 
 function Main() {
   return (
@@ -74,7 +75,8 @@ function Main() {
               Beautiful designs
             </h3>
             <p className="py-2">
-              Creating elegant design suited for the needs of our clients.
+              Creating intuitive, appealing and elegant design suited <br />
+              for the needs of our clients.
             </p>
             <h4 className="py-4 text-xl text-teal-600 ">Design Tools</h4>
             <p className="text-gray-800 py-1">Figma</p>
@@ -89,8 +91,8 @@ function Main() {
           <div className=" bg-white text-center items-center shadow-lg p-5 rounded-xl my-2 dark:bg-slate-200">
             <h3 className="text-2xl font-medium pt-8 pb-2">Clean code</h3>
             <p className="py-2">
-              Creating intuitive websites using the best practices and SOLID
-              principles.
+              Creating intuitive websites using the best practices: <br />
+              DRY, KISS, and SOLID principles.
             </p>
             <h4 className="py-4 text-xl text-teal-600">Tech Stack</h4>
             <p className="text-gray-800 py-1">React</p>
@@ -111,6 +113,7 @@ function Main() {
           </h3>
         </div>
       </section>
+      <Project_ecommerce />
       <Project_Coaching />
       <Project_ArtEscape />
     </main>
