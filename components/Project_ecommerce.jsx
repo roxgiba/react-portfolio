@@ -12,12 +12,14 @@ export default function Project_Coaching() {
     <div>
       <div className="flex items-center dark:text-white">
         <h3 className="text-4xl py-1 mt-4 dark:text-white"> 💚 NatureList</h3>
+
         <a
           href="https://nextjs-ecommerce-roxgiba.vercel.app/"
           target="_blank"
           className="text-2xl ml-2	"
         >
-          <VscArrowCircleRight />
+          <span className="text-xs ml-2">visit</span>
+          <VscArrowCircleRight className=" ml-2" />
         </a>
       </div>
       <h3 className="text-sm py-1 mb-4 text-slate-500 dark:text-white">

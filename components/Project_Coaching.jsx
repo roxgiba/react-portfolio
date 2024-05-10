@@ -16,7 +16,8 @@ export default function Project_Coaching() {
           target="_blank"
           className="text-2xl ml-2	"
         >
-          <VscArrowCircleRight />
+          <span className="text-xs ml-2">visit</span>
+          <VscArrowCircleRight className=" ml-2" />
         </a>
       </div>
       <h3 className="text-sm py-1 mb-4 text-slate-500 dark:text-white">

@@ -82,6 +82,7 @@ function Main() {
             <p className="text-gray-800 py-1">Figma</p>
             <p className="text-gray-800 py-1">Trello</p>
             <p className="text-gray-800 py-1">CSS</p>
+            <p className="text-gray-800 py-1">Storybook</p>
             <p className="text-gray-800 py-1">Bootstrap</p>
             <p className="text-gray-800 py-1">Tailwind CSS</p>
             <p className="text-gray-800 py-1">Material UI</p>
@@ -95,12 +96,13 @@ function Main() {
               DRY, KISS, and SOLID principles.
             </p>
             <h4 className="py-4 text-xl text-teal-600">Tech Stack</h4>
+            <p className="text-gray-800 py-1">HTML</p>
+            <p className="text-gray-800 py-1">JavaScript</p>
             <p className="text-gray-800 py-1">React</p>
             <p className="text-gray-800 py-1">Next.js</p>
             <p className="text-gray-800 py-1">Vue.js</p>
             <p className="text-gray-800 py-1">Node.js</p>
             <p className="text-gray-800 py-1">Express</p>
-            <p className="text-gray-800 py-1">Next.js</p>
             <p className="text-gray-800 py-1">MySQL</p>
           </div>
         </div>
